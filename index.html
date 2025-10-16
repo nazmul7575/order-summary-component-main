@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./images/favicon-32x32.png" />
+  <link rel="icon" type="image/svg+xml" href="./src/images/favicon-32x32.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>order-summary-component-main</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,45 +14,47 @@
 </head>
 
 <body>
-  <div class="relative bg-[#e0e8ff] pb-10">
-    <img src="./images/pattern-background-desktop.svg" alt="Pattern Background Image For Desktop"
-      class="w-full hidden md:block lg:block">
-    <img src="./images/pattern-background-mobile.svg" alt="Pattern Background Image For Mobile"
-      class="w-full block md:hidden lg:hidden">
-    <div class="flex items-center justify-center flex-col mx-5 -top-0">
-      <div class="max-w-[450px] bg-[#f5f7ff] shadow-2xl rounded-3xl">
-        <img src="./images/illustration-hero.svg" alt="Hero Image" class="rounded-t-3xl">
-        <h1 class="text-3xl text-center font-[900] text-[#1f2f56] mt-10">Order Summary</h1>
-        <p class="text-center text-[16px] text-[#7280a7] mx-16 mt-5 mb-10">You can now listen to millions of songs,
-          audiobooks, and
-          podcasts on any
-          device
-          anywhere
-          you like!</p>
-        <div class="flex items-center justify-center gap-5 mx-20 mb-12">
-          <img src="./images/icon-music.svg" alt="Music Icon">
-          <div>
-            <h2 class="text-[#1f2f56] text-lg font-bold">Annual Plan</h2>
-            <p class="text-[16px] text-[#7280a7]">$59.99/year</p>
+  <img class="absolute left-0 top-0 opacity-15 z-50 pointer-events-none" src="/design/desktop-design.jpg" alt="">
+  <div
+    class="relative bg-[#e0e8ff] py-6 md:pt-[102px] min-h-screen bg-[url(./src/images/pattern-background-desktop.svg)] bg-no-repeat bg-contain">
+    <div class="max-w-[480px] mx-auto px-4">
+      <div class="bg-white shadow-2xl rounded-3xl">
+        <img src="./src/images/illustration-hero.svg" alt="Hero Image" class="rounded-t-3xl">
+        <div class="p-11">
+          <h1 class="text-3xl text-center font-[900] text-[#1f2f56]">Order Summary</h1>
+          <p class="text-center text-[16px] text-[#7280a7] mt-5">You can now listen to millions of songs,
+            audiobooks, and
+            podcasts on any
+            device
+            anywhere
+            you like!</p>
+          <div class="flex items-center gap-5 mt-5 bg-[#f9f8fd] p-4 rounded-2xl">
+            <img class="shrink-0" src="./src/images/icon-music.svg" alt="Music Icon">
+            <div class="flex flex-wrap justify-between items-center w-full">
+              <div>
+                <h2 class="text-[#1f2f56] text-lg font-bold">Annual Plan</h2>
+                <p class="text-[16px] text-[#7280a7]">$59.99/year</p>
+              </div>
+              <a href="#" class="text-[#3829e0] font-bold underline hover:text-[#7b71f0] hover:no-underline">Change</a>
+            </div>
           </div>
-          <a href="#" class="text-[#3829e0] font-bold ml-5 underline hover:text-[#7b71f0] hover:no-underline">Change</a>
-        </div>
-        <div class="flex items-center justify-center flex-col">
-          <button
-            class="text-[15px] text-white font-bold py-2 px-16 mb-5 bg-[#3829e0] rounded-lg hover:bg-[#7b71f0] transition-all ease-in-out duration-300">Proceed
-            to
-            Payment</button>
-          <a href="#"
-            class="text-[15px] font-bold text-[#7280a7] hover:text-[#1f2f56] transition-all ease-in-out duration-300 mb-5">Cancel
-            Order</a>
+          <div class="flex items-center flex-col mt-5 gap-5">
+            <button
+              class="text-[15px] text-white w-full font-bold py-2 bg-[#3829e0] rounded-lg hover:bg-[#7b71f0] transition-all ease-in-out duration-300">Proceed
+              to
+              Payment</button>
+            <a href="#"
+              class="text-[15px] font-bold text-[#7280a7] hover:text-[#1f2f56] transition-all ease-in-out duration-300">Cancel
+              Order</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="text-center mt-5">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        class="text-lg text-[#3829e0] hover:text-[#0e0385] hover:underline">Frontend
-        Mentor</a>.
-      Coded by <a href="_blank" class="text-lg text-[#3829e0] hover:text-[#0e0385] hover:underline">Nazmul Islam.</a>
+      <div class="text-center mt-5">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          class="text-lg text-[#3829e0] hover:text-[#0e0385] hover:underline">Frontend
+          Mentor</a>.
+        Coded by <a href="_blank" class="text-lg text-[#3829e0] hover:text-[#0e0385] hover:underline">Nazmul Islam.</a>
+      </div>
     </div>
   </div>
   <script type="module" src="/src/main.js"></script>
